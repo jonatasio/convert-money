@@ -86,7 +86,7 @@ section {
     margin: 15px 0;
 }
 
-.currency-logo {
+.currency-logo, .currency-logo-converted {
     width: 44px;
 }
 
@@ -103,7 +103,7 @@ section {
     font-weight: 400;
 }
 
-.currency-value {
+.currency-value, .currency-value-to-convert {
     color: #555555;
     font-weight: 700;
     font-size: 20px;
