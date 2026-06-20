@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>DevClub - Convert Money</title>
 </head>
@@ -17,16 +19,23 @@
     <main>
         <label>
             Converter <b>de</b>
-            <select>
-                <option>R$ Real</option>
+            <select class="currency-select-from">
+                <option value="real">R$ Real</option>
+                <option value="dolar">US$ Dólar</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
             </select>
         </label>
 
-            <label>
+        <label>
             Converter <b>para</b>
             <select class="currency-select">
-                <option value="dolar">US$ Dólar americano</option>
+                <option value="dolar">US$ Dólar</option>
                 <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+                <option value="real">R$ Real</option>
             </select>
         </label>
 
@@ -40,7 +49,7 @@
         <section>
             <div class="currency-box">
                 <img class="currency-logo" src="./assets/real.png" alt="logo-moeda-a-converter">
-                <p class="currency">Real</p>
+                <p class="currency" id="currency-name-to-convert">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
 
@@ -54,7 +63,7 @@
 
         </section>
     </main>
-    
+
 </body>
 <script src="./scripts.js"></script>
 
